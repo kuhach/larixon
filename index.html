@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Flow Adoption — Q2 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -134,7 +134,7 @@ blockquote cite{display:block;font-style:normal;font-size:20px;color:var(--text-
   <h2 class="stagger">Эффект есть — и он измерим</h2>
   <div class="metric-grid">
     <div class="metric-card stagger"><div class="metric-val teal">5/5</div><div class="metric-cap">dev-команд используют AI</div><div class="metric-sub">team-level адопшн</div></div>
-    <div class="metric-card stagger"><div class="metric-val">+68%</div><div class="metric-cap">throughput за квартал</div><div class="metric-sub">504 → 849 задач (Q1→Q2)</div></div>
+    <div class="metric-card stagger"><div class="metric-val">+60%</div><div class="metric-cap">throughput за квартал</div><div class="metric-sub">559 → 896 задач (Q1→Q2)</div></div>
     <div class="metric-card stagger"><div class="metric-val teal">до −42%</div><div class="metric-cap">cycle time там, где взяли флоу</div><div class="metric-sub">STM&nbsp;&nbsp;7.1 → 4.1 дн<br>CD&nbsp;&nbsp;&nbsp;&nbsp;5.0 → 3.9 дн<br>LAA&nbsp;&nbsp;6.9 → 5.9 дн</div></div>
   </div>
   <p class="stagger" style="margin-top:30px;font-size:18px;">Источник: прямой разбор Jira changelog, рабочее время (выходные исключены).</p>
@@ -173,11 +173,11 @@ blockquote cite{display:block;font-style:normal;font-size:20px;color:var(--text-
   <h2 class="stagger">Throughput вырос почти везде,<br>cycle ускорился там, где взяли флоу</h2>
   <table class="dtable stagger">
     <tr><th>Команда</th><th>Throughput Q1→Q2</th><th>Cycle Q1→Q2</th><th>Комментарий</th></tr>
-    <tr><td><b>STM</b></td><td>40 → 84 <span class="up">×2.1</span></td><td>7.1 → 4.1 дн <span class="down">✅</span></td><td class="dim">взяли флоу недавно</td></tr>
-    <tr><td><b>CD</b> (Core)</td><td>129 → 285 <span class="up">×2.2</span></td><td>5.0 → 3.9 дн <span class="down">✅</span></td><td class="dim">возвратов из QA больше; рос и штат</td></tr>
-    <tr><td><b>LIOS</b> (iOS)</td><td>85 → 158 <span class="up">×1.9</span></td><td>4.0 → 4.8 дн</td><td class="dim">возвратов меньше; cycle +20% — очередь QA в мае</td></tr>
-    <tr><td><b>LAA</b> (Android)</td><td>89 → 161 <span class="up">×1.8</span></td><td>6.9 → 5.9 дн <span class="down">✅</span></td><td class="dim">быстрее (−14%)</td></tr>
-    <tr><td><b>AFT</b> ⚠️</td><td>161 → 151 (≈)</td><td class="dim">недостоверен</td><td class="dim">гигиена статусов ломает метрику</td></tr>
+    <tr><td><b>STM</b></td><td>33 → 75 <span class="up">×2.3</span></td><td>7.1 → 4.1 дн <span class="down">✅</span></td><td class="dim">взяли флоу недавно</td></tr>
+    <tr><td><b>CD</b> (Core)</td><td>118 → 258 <span class="up">×2.2</span></td><td>5.0 → 3.9 дн <span class="down">✅</span></td><td class="dim">возвратов из QA больше; рос и штат</td></tr>
+    <tr><td><b>LIOS</b> (iOS)</td><td>85 → 140 <span class="up">×1.6</span></td><td>4.0 → 4.8 дн</td><td class="dim">возвратов меньше; cycle +20% — очередь QA в мае</td></tr>
+    <tr><td><b>LAA</b> (Android)</td><td>87 → 157 <span class="up">×1.8</span></td><td>6.9 → 5.9 дн <span class="down">✅</span></td><td class="dim">быстрее (−14%)</td></tr>
+    <tr><td><b>AFT</b> ⚠️</td><td>140 → 144 (≈)</td><td class="dim">недостоверен</td><td class="dim">гигиена статусов ломает метрику</td></tr>
     <tr><td><b>VP</b></td><td>0 → 10</td><td class="warn">9.99 дн</td><td class="dim">новый, самый тяжёлый</td></tr>
   </table>
   <p class="stagger" style="margin-top:18px;font-size:16px;">Throughput = задачи верхнего уровня (сабтаски исключены). Cycle = активная работа (без бэклога/Launchpad).</p>
@@ -215,7 +215,7 @@ blockquote cite{display:block;font-style:normal;font-size:20px;color:var(--text-
   <p class="stagger" style="margin-top:8px;font-size:17px;"><b class="bright">Как:</b> раньше Claude точечно; сейчас: Влад кодит → тест-дизайн через MCP → код-ревью Паши → релиз.</p>
   <div class="stagger" style="display:flex;gap:16px;margin:14px 0;">
     <div class="ba-block"><div class="v teal" style="font-size:30px;">7.1 → 4.1 дн</div><div class="l">cycle · −42% ✅</div></div>
-    <div class="ba-block"><div class="v" style="font-size:30px;">×2.1</div><div class="l">throughput · 40 → 84 задач</div></div>
+    <div class="ba-block"><div class="v" style="font-size:30px;">×2.3</div><div class="l">throughput · 33 → 75 задач</div></div>
   </div>
   <div class="split stagger" style="margin-top:16px;align-items:start;gap:34px;">
     <div>
@@ -256,7 +256,7 @@ blockquote cite{display:block;font-style:normal;font-size:20px;color:var(--text-
     <tr><td>Cycle time dev-задачи</td><td class="dim">48 ч</td><td>17 ч</td><td class="up">×2.8</td></tr>
     <tr><td>Выполняемость SP</td><td class="dim">100%</td><td>99%</td><td class="dim">стабильно</td></tr>
   </table>
-  <p class="stagger" style="margin-top:12px;font-size:16px;"><b class="bright">Наш замер Q1→Q2'26</b> (обе уже AI-эра): 161 → 151 задач верхнего уровня (≈ровно); по 2-нед. окнам ~29 задач, пик 57 в июне.</p>
+  <p class="stagger" style="margin-top:12px;font-size:16px;"><b class="bright">Наш замер Q1→Q2'26</b> (обе уже AI-эра): 140 → 144 задач верхнего уровня (≈ровно); по 2-нед. окнам ~29 задач, пик 57 в июне.</p>
   <div class="callout stagger"><p style="color:var(--text);"><strong>🚩 Свежий cycle собрать не удаётся:</strong> задачи двигают мимо статусов (<span class="mono">In Progress</span> пролётный, треть — сразу в Done). Пока команда не наведёт гигиену статусов — cycle по данным недостоверен.</p></div>
 </section>
 
@@ -266,7 +266,7 @@ blockquote cite{display:block;font-style:normal;font-size:20px;color:var(--text-
   <span class="stagger" style="display:inline-block;font-family:var(--font-mono);font-size:12px;letter-spacing:.03em;padding:5px 12px;border-radius:20px;background:rgba(15,179,166,0.12);color:var(--teal);border:1px solid rgba(15,179,166,0.32);margin-top:6px;">Зрелость: Team flow → End-to-end (ASGARD) + Reusable (AI-вики)</span>
   <h3 class="stagger" style="margin-top:8px;">От ASGARD к точечным задачам через агентов</h3>
   <div class="metric-grid stagger" style="grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px;">
-    <div class="metric-card" style="padding:14px 18px;"><div class="metric-val" style="font-size:34px;">×1.8–1.9</div><div class="metric-cap">throughput за квартал</div><div class="metric-sub">LAA 89 → 161 · LIOS 85 → 158</div></div>
+    <div class="metric-card" style="padding:14px 18px;"><div class="metric-val" style="font-size:34px;">×1.6–1.8</div><div class="metric-cap">throughput за квартал</div><div class="metric-sub">LAA 87 → 157 · LIOS 85 → 140</div></div>
     <div class="metric-card" style="padding:14px 18px;"><div class="metric-val teal" style="font-size:34px;">5.9 дн</div><div class="metric-cap">cycle time LAA ✅ быстрее</div><div class="metric-sub">было 6.9 · LIOS 4.0→4.8 (очередь QA в мае)</div></div>
     <div class="metric-card" style="padding:14px 18px;"><div class="metric-val teal" style="font-size:34px;">0.7 → 0.3</div><div class="metric-cap">возвраты из QA снизились (LIOS)</div><div class="metric-sub">LAA 0.4 → 0.3 — тоже меньше</div></div>
   </div>
@@ -296,7 +296,7 @@ blockquote cite{display:block;font-style:normal;font-size:20px;color:var(--text-
   <p class="stagger" style="margin-top:12px;font-size:18px;"><b class="bright">Как:</b> Claude в разработке, тестировании и ревью требований; QA оформила MCP Tools Box — тест-дизайн, ревью спек, автотесты, баг-репорты.</p>
   <p class="mono stagger" style="font-family:var(--font-mono);font-size:13px;color:var(--teal);margin:18px 0 8px;letter-spacing:.06em;">✅ ЧТО СТАЛО ЛУЧШЕ</p>
   <div class="metric-grid stagger" style="grid-template-columns:repeat(4,1fr);gap:14px;">
-    <div class="metric-card" style="padding:18px 20px;"><div class="metric-val" style="font-size:38px;">×2.2</div><div class="metric-cap">задач за квартал</div><div class="metric-sub">129 → 285</div></div>
+    <div class="metric-card" style="padding:18px 20px;"><div class="metric-val" style="font-size:38px;">×2.2</div><div class="metric-cap">задач за квартал</div><div class="metric-sub">118 → 258</div></div>
     <div class="metric-card" style="padding:18px 20px;"><div class="metric-val teal" style="font-size:38px;">3.9 дн</div><div class="metric-cap">cycle time быстрее</div><div class="metric-sub">5.0 → 3.9</div></div>
     <div class="metric-card" style="padding:18px 20px;"><div class="metric-val teal" style="font-size:38px;">+50%</div><div class="metric-cap">velocity</div><div class="metric-sub">~322 → ~483 SP · пик 766</div></div>
     <div class="metric-card" style="padding:18px 20px;"><div class="metric-val teal" style="font-size:38px;">×3.7</div><div class="metric-cap">время тестирования</div><div class="metric-sub">110 → 30 ч (эффект тулинга)</div></div>
@@ -339,6 +339,23 @@ blockquote cite{display:block;font-style:normal;font-size:20px;color:var(--text-
 </section>
 
 <!-- 14 INSIGHT: process bottleneck -->
+<!-- 13b RED -->
+<section class="slide">
+  <span class="label stagger">RED · Недвижимость</span>
+  <span class="stagger" style="display:inline-block;font-family:var(--font-mono);font-size:12px;letter-spacing:.03em;padding:5px 12px;border-radius:20px;background:rgba(15,179,166,0.12);color:var(--teal);border:1px solid rgba(15,179,166,0.32);margin-top:6px;">Зрелость: Team flow (+ свой AI-репозиторий команды)</span>
+  <h2 class="stagger">AI в полном цикле: <span class="accent">от ТЗ до MR</span></h2>
+  <div class="stagger" style="display:flex;gap:18px;margin-top:14px;flex-wrap:wrap;">
+    <div class="ba-block" style="flex:1;min-width:240px;"><div class="l" style="margin-top:0;">Было · точечно</div><p style="font-size:16px;margin-top:8px;">Claude у отдельных людей поверх текущих задач, без общей инфраструктуры и учёта.</p></div>
+    <div class="ba-block after" style="flex:2.2;min-width:340px;"><div class="l" style="margin-top:0;">Сейчас</div><p style="font-size:16px;margin-top:8px;"><b class="bright">Dev:</b> Claude в рабочем окружении (репо, Xcode, git, GitLab, вики) — полный цикл ТЗ → MR в терминале/IDE · <b class="bright">QA:</b> tester_mcp вместе с Core + свои скиллы · <b class="bright">Продакт:</b> PRD/SSOT, ресёрчи, запросы в БД · свой <b class="bright">AI-репозиторий</b> (база знаний + скиллы) · дизайнер сам навайбкодил лендинг тарифов.</p></div>
+  </div>
+  <p class="stagger" style="margin-top:12px;font-size:15px;color:var(--text-dim);">Не прижилось: вайбкодинг продакта — разработка кодит и ревьюит сама, продакт готовит детальные PRD и прототипы с Claude.</p>
+  <div class="stagger" style="display:flex;gap:16px;margin:16px 0;flex-wrap:wrap;">
+    <div class="ba-block"><div class="v">×1.3</div><div class="l">поток задач вырос · 96 → 122</div></div>
+    <div class="ba-block after"><div class="v teal">−44%</div><div class="l">cycle time снизился · 9.2 → 5.1 дн*</div></div>
+  </div>
+  <div class="callout stagger"><p style="color:var(--text);font-size:16px;">* Метрика не совсем чистая: в этот же период RED чистил процессы (перевод флоу на общий формат, актуализация досок) — ускорение не только от AI. AI-работа в Jira пока не размечена (0 задач типа Agent) — единый учёт через <b class="bright">Agent</b> — фокус Q3.</p></div>
+</section>
+
 <section class="slide">
   <span class="label stagger">Что поняли про метрики</span>
   <h2 class="stagger">Кодинг стал быстрым — <span class="teal">дополнительная нагрузка легла на QA</span></h2>
@@ -380,7 +397,7 @@ blockquote cite{display:block;font-style:normal;font-size:20px;color:var(--text-
     <blockquote class="stagger">AI ускорил не всё подряд —<br>а <span class="accent">лёгкое</span>. Дальше ускоряем <span class="teal">процессы</span>.
     </blockquote>
     <div class="tags stagger" style="margin-top:40px;">
-      <span class="tag accent">throughput +68%</span>
+      <span class="tag accent">throughput +60%</span>
       <span class="tag teal">5/5 dev-команд</span>
       <span class="tag">Q3: продакты + процессы</span>
     </div>
